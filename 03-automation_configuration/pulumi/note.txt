@@ -1,0 +1,9 @@
+# install pulumi
+brew install pulumi/tap/pulumi
+
+# sync with minio
+pulumi login 's3://pulumi?endpoint=io.kopihitam.space&region=ap-southeast-3&s3ForcePathStyle=true&profile=pulumi'
+
+pulumi login 's3://<bucket-name>?endpoint=my.minio.local:8080&disableSSL=true&s3ForcePathStyle=true'
+pulumi login 's3://pulumi?endpoint=192.168.253.224:9003&disableSSL=true&s3ForcePathStyle=true'
+pulumi login 's3://<bucket-name>?region=us-east-1&awssdk=v2&profile=<profile-name>'
